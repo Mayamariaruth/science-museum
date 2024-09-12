@@ -15,7 +15,7 @@ main {
   height: 90vh;
 }
 
-/* Navigation bar */
+/* Navigation */
 header {
   display: flex;
   height: 83px;
@@ -90,8 +90,53 @@ nav a {
   padding-left: 1rem;
 }
 
+/* Footer */
+footer {
+  border-top: solid black;
+  padding: 1.3rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+  border-bottom: solid 1px #2B5671;
+  -webkit-text-stroke-width: 0.5px;
+  letter-spacing: 2px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 17px;
+}
+
+.links {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.links a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #2B5671;
+  line-height: 17px;
+}
+
+.socials {
+  margin-top: 1.2rem;
+}
+
+.socials a {
+  color: #2B5671;
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+}
+
 /* Media queries */
 @media (min-width: 576px) {
+  /* Navigation */
   header {
     padding-bottom: 1rem;
   }
@@ -175,6 +220,9 @@ nav a {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
+
+  /* Footer */
+
 }
 
 @media (min-width: 768px) {
