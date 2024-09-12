@@ -4,4 +4,129 @@
 @import url("./info.css");
 @import url("./support.css");
 
+body {
+  font-family: 'ABeeZee', sans-serif;
+  color: #2B5671;
+  margin: 0;
+  max-width: 2000px;
+}
 
+main {
+  height: 90vh;
+}
+
+/* Navigation bar */
+header {
+  display: flex;
+  height: 83px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon span,
+.desktop-docs,
+.menu-icon,
+#nav-box {
+  display: none;
+}
+
+#logo {
+  height: 65px;
+  margin-left: 16px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 14%;
+  right: 0;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+nav a {
+  color: #2B5671;
+  display: block;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-underline {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 2rem;
+  padding-top: 5px;
+}
+
+#nav-box:checked~nav {
+  display: block;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  margin-right: 18px;
+  font-size: 2.3rem;
+}
+
+.mobile-docs {
+  display: flex;
+}
+
+.mobile-docs span {
+  font-size: 10px;
+  content: "|";
+}
+
+.mobile-docs span::after {
+  content: "|";
+  padding-left: 1rem;
+}
+
+/* Media queries */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  .menu-icon,
+  .mobile-docs,
+  .dropdown-content {
+    display: none;
+  }
+
+  #nav-box:checked~nav {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    position: relative;
+    top: 0;
+  }
+
+  .menu-underline {
+    display: none;
+  }
+
+  .desktop-docs {
+    display: flex;
+  }
+
+  #dropdown-toggle:checked~.dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover {
+    display: block;
+  }
+}
+
+@media (min-width: 998px) {}

@@ -21,16 +21,12 @@
   <title>Oslo Science Museum | Home</title>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <input type="checkbox" id="nav-box" />
-    <label for="nav-box">
-      <i class="fa-solid fa-bars"></i>
-      <span>Menu</span>
-    </label>
     <a href="index.html">
-      <img src="assets/images/logo.png" alt="Oslo Science Museum logo" />
+      <img id="logo" src="assets/images/logo.png" alt="Oslo Science Museum logo" />
     </a>
-    <div>
+    <div class="desktop-docs">
       <a href="./assets/docs/privacy-policy.pdf" target="_blank">
         <span>Privacy Policy</span>
       </a>
@@ -38,21 +34,29 @@
         <span>Terms & Conditions</span>
       </a>
     </div>
+    <input type="checkbox" id="nav-box" />
+    <label for="nav-box" class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+      <span>Menu</span>
+    </label>
     <nav>
       <a href="index.html">
         <span>Home</span>
       </a>
+      <hr class="menu-underline">
       <a href="./html/exhibits.html">
         <span>Exhibits</span>
       </a>
+      <hr class="menu-underline">
       <a href="./html/support.html">
         <span>Support</span>
       </a>
-      <div>
-        <a href="">
+      <hr class="menu-underline">
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">
           <span>Visit</span>
         </a>
-        <div>
+        <div class="dropdown-content">
           <a href="./html/contact.html">
             <span>Contact</span>
           </a>
@@ -64,13 +68,24 @@
           </a>
         </div>
       </div>
+      <hr class="menu-underline">
+      <div class="mobile-docs">
+        <a href="./assets/docs/privacy-policy.pdf" target="_blank">
+          <span>PRIVACY POLICY</span>
+        </a>
+        <a href="./assets/docs/terms-conditions.pdf" target="_blank">
+          <span>TERMS & CONDITIONS</span>
+        </a>
+      </div>
     </nav>
   </header>
+  <!-- Main content -->
   <main>
     <section></section>
     <aside></aside>
     <article></article>
   </main>
+  <!-- Footer -->
   <footer>
     <div>
       <h3>Oslo Science Museum</h3>
