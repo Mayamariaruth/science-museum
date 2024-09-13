@@ -9,10 +9,11 @@ body {
   color: #2B5671;
   margin: 0;
   max-width: 2000px;
+  height: 100%;
 }
 
 main {
-  height: 90vh;
+  flex: 1;
 }
 
 /* Navigation */
@@ -132,6 +133,11 @@ footer p {
   font-size: 2.2rem;
   margin-top: 1.5rem;
   text-decoration: none;
+}
+
+/* Landing page */
+#hero-image {
+  width: 100%;
 }
 
 /* Media queries */
