@@ -111,7 +111,6 @@ nav a {
 
 /* Footer */
 footer {
-  border-top: solid black;
   padding: 1.3rem;
 }
 
@@ -200,7 +199,8 @@ footer p {
 
 .kids h3,
 .clubs h3,
- {
+.teachers h3,
+.researchers h3 {
   font-size: 22px;
   -webkit-text-stroke-width: 0.5px;
   margin-bottom: 0;
@@ -236,7 +236,7 @@ footer p {
 .caption {
   position: absolute;
   color: #fff;
-  font-size: 28px;
+  font-size: 25px;
   -webkit-text-stroke-width: 1px;
   bottom: -20px;
   text-align: center;
@@ -252,12 +252,62 @@ footer p {
   background-color: #F7BF36;
   color: #fff;
   border-radius: 150px;
-  font-size: 27px;
+  font-size: 26px;
   text-decoration: none;
   text-align: center;
   width: fit-content;
   padding: 16px 28px;
   -webkit-text-stroke-width: 1.5px;
+}
+
+.teachers,
+.researchers {
+  padding-left: 16px;
+}
+
+.teachers {
+  background-color: #A69CA0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 2rem 16px;
+}
+
+.researchers {
+  background-color: #A6675B;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 2rem 16px;
+}
+
+.teachers h3,
+.researchers h3 {
+  color: #fff;
+}
+
+.teachers p,
+.researchers p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.teacher-image {
+  width: 90%;
+  height: 290px;
+  object-fit: cover;
+}
+
+.researcher-image {
+  width: 90%;
+  height: 290px;
+  object-fit: cover;
+  object-position: 30%;
+  margin-left: 10px;
+}
+
+.container {
+  flex: 1;
 }
 
 /* Media queries */
