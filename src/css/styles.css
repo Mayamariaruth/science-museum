@@ -63,6 +63,12 @@ main {
   -webkit-text-stroke-width: 2px;
 }
 
+.heading {
+  font-size: 22px;
+  -webkit-text-stroke-width: 0.5px;
+  margin-bottom: 0;
+}
+
 /* Navigation */
 header {
   display: flex;
@@ -226,15 +232,6 @@ footer p {
 
 .center-image {
   text-align: center;
-}
-
-.kids h3,
-.clubs h3,
-.teachers h3,
-.researchers h3 {
-  font-size: 22px;
-  -webkit-text-stroke-width: 0.5px;
-  margin-bottom: 0;
 }
 
 .kids p,
