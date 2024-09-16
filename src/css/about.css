@@ -1,0 +1,27 @@
+.about-btn {
+    background-color: #F7BF36;
+    color: #fff;
+    border-radius: 150px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    padding: 16px 28px;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.mission-bg {
+    background: url('/assets/images/about/about2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.mission-bg p {
+    width: 70%;
+    text-align: center;
+}
