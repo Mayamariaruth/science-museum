@@ -1,0 +1,86 @@
+.hours {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.hours h2 {
+    margin-bottom: 1rem;
+}
+
+.hours p {
+    margin: 2px;
+    font-size: 16px;
+}
+
+.admission {
+    background-color: #A6675B;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.center-container {
+    max-width: 450px;
+}
+
+.food,
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food p {
+    width: 215px;
+    padding-left: 2.3rem;
+}
+
+.shop {
+    background: url('/assets/images/info/info3.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2.7rem;
+}
+
+.shop h2,
+.shop p {
+    padding-left: 2.5rem;
+}
+
+.shop p {
+    max-width: 300px;
+    width: 55%;
+}
+
+iframe {
+    margin-top: 1.3rem;
+}
+
+.accessibility {
+    margin-top: 4rem;
+    background-color: #7B7586;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
