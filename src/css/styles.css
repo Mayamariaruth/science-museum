@@ -465,7 +465,8 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  .hero-text {
+  .hero-text,
+  .main-container h1 {
     width: 100%;
     font-size: 45px;
   }
@@ -533,6 +534,10 @@ footer p {
 
   .hero-text {
     font-size: 50px;
+  }
+
+  .text {
+    font-size: 21px;
   }
 
   .wrapper {
