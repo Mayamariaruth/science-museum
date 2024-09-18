@@ -208,7 +208,7 @@ footer p {
 
 .hero-text {
   position: absolute; 
-  top: 50%; 
+  top: 60%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: white; 
@@ -474,17 +474,9 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  nav {
-    gap: 2rem;
-    margin-right: 3rem;
-  }
-
-  nav a {
-    font-size: 17px;
-  }
-
-  .desktop-docs {
-    margin-right: 4.7rem;
+  .hero-text {
+    width: 100%;
+    font-size: 45px;
   }
 
   .footer-container {
@@ -493,5 +485,20 @@ footer p {
 }
 
 @media (min-width: 998px) {
+  nav {
+    gap: 3rem;
+    margin-right: 3rem;
+  }
 
+  nav a {
+    font-size: 17px;
+  }
+
+  .desktop-docs {
+    margin-right: 4.9rem;
+  }
+
+  .hero-text {
+    font-size: 50px;
+  }
 }
