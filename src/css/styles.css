@@ -295,18 +295,14 @@ footer p {
 
 .teachers {
   background-color: #A69CA0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 0 2rem 16px;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
 }
 
 .researchers {
   background-color: #A6675B;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 0 2rem 16px;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
 }
 
 .teachers h3,
@@ -316,29 +312,15 @@ footer p {
 
 .teachers p,
 .researchers p {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
-}
-
-.teacher-image {
-  width: 90%;
-  height: 290px;
-  object-fit: cover;
-}
-
-.researcher-image {
-  width: 90%;
-  height: 290px;
-  object-fit: cover;
-  object-position: 30%;
+  max-width: 700px;
 }
 
 .container {
-  flex: 1;
-}
-
-.margin-r {
-  margin-right: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Media queries */
@@ -471,12 +453,63 @@ footer p {
   .exhibits-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .eco-home {
+    grid-column: span 2;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
   .hero-text {
     width: 100%;
     font-size: 45px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 19px;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
+
+  .kids,
+  .clubs {
+    width: 400px;
+  }
+
+  .home-images {
+    width: 300px;
+    height: 300px;
+  }
+
+  .heading {
+    font-size: 23px;
+  }
+
+  .kids p,
+  .clubs p,
+  .teachers p,
+  .researchers p {
+    font-size: 17px;
+  }
+
+  .caption {
+    font-size: 29px;
+  }
+
+  .exhibits-btn {
+    font-size: 30px;
+    padding: 19px 45px;
   }
 
   .footer-container {
@@ -500,5 +533,29 @@ footer p {
 
   .hero-text {
     font-size: 50px;
+  }
+
+  .wrapper {
+    gap: 9rem;
+    margin-right: 3rem;
+  }
+
+  .btn-container {
+    margin-bottom: 7rem;
+  }
+
+  .exhibits-btn {
+    font-size: 32px;
+    padding: 21px 50px;
+  }
+
+  .teachers h3,
+  .researchers h3 {
+    font-size: 2rem;
+  }
+
+  .teachers p,
+  .researchers p {
+    font-size: 20px;
   }
 }
