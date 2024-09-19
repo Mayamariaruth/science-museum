@@ -1,3 +1,11 @@
+.about {
+    margin-top: 1.2rem;
+}
+
+#about-image {
+    margin-top: 1rem;
+}
+
 .about-btn {
     background-color: #F7BF36;
     color: #fff;
@@ -24,4 +32,62 @@
 .mission-bg p {
     width: 70%;
     text-align: center;
+}
+
+@media (min-width: 576px) {
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem 0;
+        gap: 1.5rem;
+    }
+
+    #about-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .text-container {
+        max-width: 600px;
+    }
+
+    .about-btn {
+        font-size: 24px;
+        padding: 18px 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mission-bg p {
+        font-size: 20px;
+    }
+
+    .about-container {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 998px) {
+    .mission-bg p {
+        font-size: 24px;
+    }
+
+    #about-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .about-btn {
+        font-size: 30px;
+        padding: 20px 42px;
+    }
+
+    .about-container {
+        gap: 6rem;
+    }
+
+    #mission-title {
+        font-size: 40px;
+    }
 }
