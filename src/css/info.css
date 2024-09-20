@@ -1,179 +1,186 @@
 .hours-info {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .hours-info h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hours-info p {
-    margin: 2px;
-    font-size: 16px;
+  margin: 2px;
+  font-size: 16px;
 }
 
 .admission {
-    background-color: #A6675B;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  background-color: #a6675b;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .center-container {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .food,
 .location-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .food p {
-    width: 215px;
-    padding-left: 2.3rem;
+  width: 215px;
+  padding-left: 2.3rem;
 }
 
 .shop {
-    background: url('/assets/images/info/info3.jpg') no-repeat center center;
-    background-size: cover;
-    height: 50vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 2.7rem;
+  background: url("/assets/images/info/info3.jpg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2.7rem;
 }
 
 .shop h2,
 .shop p {
-    padding-left: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .shop p {
-    max-width: 500px;
-    width: 55%;
+  max-width: 500px;
+  width: 55%;
 }
 
 iframe {
-    margin-top: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .accessibility {
-    margin-top: 4rem;
-    background-color: #7B7586;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 4rem;
+  background-color: #7b7586;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
-    .hours-container,
-    .food-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
-        gap: 2rem;
-    }
+  .hours-container,
+  .food-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
 
-    .location-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 3rem;
-    }
+  .location-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
 
-    .shop h2, .shop p {
-        padding-left: 4rem;
-    }
+  .shop h2,
+  .shop p {
+    padding-left: 4rem;
+  }
 
-    iframe {
-        width: 350px;
-        height: 350px;
-    }
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (min-width: 768px) {
-    .hours-info p,
-    .admission p,
-    .food p,
-    .shop p,
-    .location-container p,
-    .accessibility p {
-        font-size: 20px;
-    }
+  #info-hero {
+    object-position: top;
+  }
+  
+  .hours-info p,
+  .admission p,
+  .food p,
+  .shop p,
+  .location-container p,
+  .accessibility p {
+    font-size: 20px;
+  }
 
-    .hours-container,
-    .food-container,
-    .location-container {
-        gap: 5rem;
-    }
+  .hours-container,
+  .food-container,
+  .location-container {
+    gap: 5rem;
+  }
 
-    .food {
-        align-items: first baseline;
-    }
+  .food {
+    align-items: first baseline;
+  }
 
-    .food p {
-        padding-left: 0;
-        width: 300px;
-    }
+  .food p {
+    padding-left: 0;
+    width: 300px;
+  }
 
-    .shop {
-        height: 60vh;
-    }
+  .shop {
+    height: 60vh;
+  }
 
-    .shop h2, .shop p {
-        padding-left: 6rem;
-    }
+  .shop h2,
+  .shop p {
+    padding-left: 6rem;
+  }
 }
 
 @media (min-width: 998px) {
-    .shop h2, .shop p {
-        padding-left: 8rem;
-    }
+  .shop h2,
+  .shop p {
+    padding-left: 8rem;
+  }
 
-    .hours-info p,
-    .admission p,
-    .food p,
-    .shop p,
-    .location-container p,
-    .accessibility p {
-        font-size: 22px;
-    }
+  .hours-info p,
+  .admission p,
+  .food p,
+  .shop p,
+  .location-container p,
+  .accessibility p {
+    font-size: 22px;
+  }
 
-    .hours-container,
-    .food-container,
-    .location-container {
-        gap: 8rem;
-    }
+  .hours-container,
+  .food-container,
+  .location-container {
+    gap: 8rem;
+  }
 
-    #info1,
-    #info2 {
-        height: 360px;
-        width: 360px;
-    }
+  #info1,
+  #info2 {
+    height: 360px;
+    width: 360px;
+  }
 
-    iframe {
-        width: 430px;
-        height: 400px;
-    }
+  iframe {
+    width: 430px;
+    height: 400px;
+  }
 }
