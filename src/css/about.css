@@ -19,7 +19,7 @@
 }
 
 .mission-bg {
-  background: url('/assets/images/about/about2.jpg') no-repeat center center;
+  background: url('../../assets/images/about/about2.jpg') no-repeat center center;
   background-size: cover;
   height: 50vh;
   display: flex;
