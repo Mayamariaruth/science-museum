@@ -116,7 +116,7 @@ nav a {
 }
 
 .dropdown-content a {
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 2rem;
   padding-top: 5px;
 }
@@ -176,6 +176,7 @@ footer p {
   text-decoration: none;
   color: #2b5671;
   line-height: 17px;
+  width: max-content;
 }
 
 .socials {
@@ -386,7 +387,7 @@ footer p {
   }
 
   .dropdown-content a {
-    font-size: 16px;
+    font-size: 17px;
     padding-left: 0;
     -webkit-text-stroke-width: 0;
   }
@@ -466,7 +467,8 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  nav a {
+  nav a,
+  .dropdown-content a {
     font-size: 20px;
   }
 
