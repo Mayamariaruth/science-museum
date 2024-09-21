@@ -115,7 +115,7 @@ iframe {
 
 @media (min-width: 768px) {
   #info-hero {
-    object-position: top;
+    object-position: 75% 25%;
   }
   
   .hours-info p,
