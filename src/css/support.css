@@ -67,9 +67,3 @@
     font-size: 18px;
   }
 }
-
-@media (min-width: 998px) {
-  #size {
-    font-size: 18px;
-  }
-}
