@@ -242,7 +242,6 @@ footer p {
 .kids p,
 .clubs p {
   width: 95%;
-  font-size: 14px;
   margin-top: 6px;
 }
 
@@ -519,20 +518,18 @@ footer p {
 
   .kids,
   .clubs {
-    width: 400px;
+    width: 700px;
   }
 
   .home-images {
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
   }
 
   .heading {
     font-size: 23px;
   }
 
-  .kids p,
-  .clubs p,
   .teachers p,
   .researchers p {
     font-size: 17px;
