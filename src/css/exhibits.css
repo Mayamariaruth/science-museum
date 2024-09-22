@@ -18,19 +18,19 @@
   -webkit-text-stroke-width: 1px;
   letter-spacing: 2px;
   margin-bottom: 3px;
-  padding-left: 23px;
+  padding-left: 27px;
   font-size: 20px;
 }
 
 .ex-sub {
   font-size: 17px;
   margin-top: 0;
-  padding-left: 23px;
+  padding-left: 27px;
 }
 
 .ex-text {
   font-size: 12px;
-  padding-left: 23px;
+  padding-left: 27px;
   width: 85%;
 }
 
@@ -42,7 +42,7 @@
 
 .events-container h2 {
   -webkit-text-stroke-width: 0.5px;
-  padding-left: 23px;
+  padding-left: 27px;
   margin-bottom: 0;
 }
 
@@ -75,13 +75,13 @@
 
 .events-text {
   font-size: 15px;
-  padding-left: 23px;
+  padding-left: 27px;
   margin-top: 5px;
 }
 
 .body-text {
   font-size: 13px;
-  padding-left: 23px;
+  padding-left: 27px;
   max-width: 900px;
   margin-top: 2rem;
 }
