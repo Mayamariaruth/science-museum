@@ -37,16 +37,16 @@ input[type="tel"] {
   padding: 7px;
   margin-top: 5px;
   margin-bottom: 1rem;
-  border: solid 1px #2b5671;
+  border: solid 1px #000;
   font-size: 14px;
-  color: #2b5671;
+  color: #000;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-  border: solid 1px #2b5671;
+  border: solid 1px #000;
 }
 
 textarea {
@@ -54,18 +54,23 @@ textarea {
   padding: 7px;
   margin-top: 5px;
   margin-bottom: 1.5rem;
-  border: solid 1px #2b5671;
+  border: solid 1px #000;
   font-size: 14px;
-  color: #2b5671;
+  color: #000;
 }
 
 .submit-btn {
   padding: 9px;
   background-color: #a6675b;
-  color: #fff;
+  color: #000;
   font-size: 15px;
   border: none;
   border-radius: 20px;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: #3F2824;
 }
 
 @media (min-width: 768px) {
@@ -78,7 +83,7 @@ textarea {
   input[type="tel"] {
     padding: 8px;
     font-size: 17px;
-    color: #2b5671;
+    color: #000;
   }
 
   textarea {

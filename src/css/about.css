@@ -4,7 +4,7 @@
 
 .about-btn {
   background-color: #f7bf36;
-  color: #fff;
+  color: #000;
   border-radius: 150px;
   font-size: 20px;
   text-decoration: none;
@@ -12,6 +12,11 @@
   width: fit-content;
   padding: 16px 28px;
   -webkit-text-stroke-width: 1.5px;
+}
+
+.about-btn:hover {
+  background-color: #5D4816;
+  color: #fff;
 }
 
 .mission-bg {

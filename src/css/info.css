@@ -18,7 +18,7 @@
 
 .admission {
   background-color: #a6675b;
-  color: #fff;
+  color: #000;
   width: 100%;
   text-align: center;
   padding-top: 1rem;
@@ -75,7 +75,7 @@ iframe {
 .accessibility {
   margin-top: 4rem;
   background-color: #7b7586;
-  color: #fff;
+  color: #000;
   width: 100%;
   text-align: center;
   padding-top: 1rem;
