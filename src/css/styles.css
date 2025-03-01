@@ -293,7 +293,7 @@ footer p {
 }
 
 .exhibits-btn:hover {
-  background-color: #5D4816;
+  background-color: #5d4816;
   color: #fff;
 }
 
@@ -366,8 +366,19 @@ footer p {
     display: flex;
     position: relative;
     gap: 1.5rem;
-    margin-right: 1.2rem;
     padding-top: 0;
+    bottom: 16px;
+    padding-bottom: 0;
+    width: auto;
+    padding-right: 17px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 
   nav a {
@@ -408,7 +419,6 @@ footer p {
   .desktop-docs {
     display: flex;
     margin-top: 1rem;
-    margin-right: 1.2rem;
   }
 
   .desktop-docs a {
@@ -476,8 +486,28 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  header {
+    height: 95px;
+  }
+
+  .position {
+    gap: 40px;
+  }
+
   #logo {
-    height: 135px;
+    height: 145px;
+  }
+
+  nav {
+    padding-right: 50px;
+  }
+
+  .desktop-docs {
+    padding-right: 31px;
+  }
+
+  nav ul {
+    gap: 30px;
   }
 
   nav a,
@@ -492,7 +522,7 @@ footer p {
   footer h3 {
     font-size: 19px;
   }
-  
+
   footer p,
   .links a {
     font-size: 15px;
@@ -552,15 +582,14 @@ footer p {
 @media (min-width: 998px) {
   nav {
     gap: 3rem;
-    margin-right: 3rem;
-  }
-
-  .desktop-docs {
-    margin-right: 4.9rem;
   }
 
   .desktop-docs a {
     font-size: 12px;
+  }
+
+  nav ul {
+    gap: 65px;
   }
 
   .footer-container {
