@@ -1,3 +1,7 @@
+.ex-container {
+  margin-bottom: 100px;
+}
+
 .ex-images {
   width: 100%;
   object-fit: cover;
@@ -18,13 +22,35 @@
   -webkit-text-stroke-width: 1px;
   letter-spacing: 2px;
   margin-bottom: 3px;
-  padding-left: 27px;
+  margin-left: 27px;
   font-size: 20px;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.blue-bb {
+  border-bottom: solid 3px #b7c5e7;
+}
+
+.orange-bb {
+  border-bottom: solid 3px #fccca1;
+}
+
+.red-bb {
+  border-bottom: solid 3px #e5bebe;
+}
+
+.green-bb {
+  border-bottom: solid 3px #b6dfa8;
+}
+
+.purple-bb {
+  border-bottom: solid 3px #d0c0e9;
 }
 
 .ex-sub {
   font-size: 17px;
-  margin-top: 0;
+  margin-top: 8px;
   padding-left: 27px;
 }
 
