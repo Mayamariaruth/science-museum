@@ -1,21 +1,63 @@
+.contact-container h2,
+.contact-container p,
+.contact-container i {
+  padding-left: 16px;
+}
+
 #width {
   width: 80%;
 }
 
-.contact-text {
-  margin-bottom: 6px;
-  margin-top: 0;
+.contact-box {
+  box-sizing: border-box;
+  padding: 23px 15px 0 0;
+  margin: 30px auto 10px;
+  width: 319px;
+  height: 230px;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.contact-box a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-box i {
+  font-size: 35px;
+}
+
+.box-text {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.fa-comments {
+  color: #b7c5e7;
+}
+
+.fa-circle-info {
+  color: #b6dfa8;
+}
+
+.fa-shop {
+  color: #fccca1;
 }
 
 .form-container {
   background-color: #fff;
   padding: 10px 20px 40px;
   width: 80%;
-  margin: 50px auto 100px;
+  max-height: 600px;
   border-radius: 20px;
   max-width: 500px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#no-padding {
+  padding-left: 0;
 }
 
 form {
@@ -70,6 +112,38 @@ textarea {
 }
 
 @media (min-width: 768px) {
+  .contact-container h2,
+  .contact-container p,
+  .contact-container i {
+    padding-left: 25px;
+  }
+
+  #boxes-form {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin: 50px auto 150px;
+    max-width: 900px;
+  }
+
+  .contact-box-section {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+  }
+
+  .contact-box {
+    margin: 0;
+    height: fit-content;
+    padding-bottom: 5px;
+  }
+
+  .form-container {
+    flex: 1 1 55%;
+  }
+
   form {
     font-size: 18px;
   }

@@ -118,8 +118,8 @@
     </header>
     <!-- Main content -->
     <main>
-      <section class="padding">
-        <h2 class="title">Contact</h2>
+      <section class="contact-container">
+        <h2 class="title">Get In Touch With Us</h2>
         <p class="text text-margin">
           Have questions or need help planning your visit? We're here to help!
         </p>
@@ -128,28 +128,53 @@
           friendly team is ready to answer your questions and make your museum
           experience awesome.
         </p>
-        <p class="text contact-text">Telephone: +47 21 98 20 00</p>
-        <p class="text contact-text">Email: Info@oslosciencemuseum.org</p>
-        <p class="text contact-text">
-          Address: Oslo Science Museum, Haakon VIIs gate 1, 0161 Oslo, Norway
-        </p>
-      </section>
-      <section>
-        <div class="form-container">
-          <h2 class="title">Contact Us</h2>
-          <hr />
-          <form method="GET">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required />
-            <label for="email">Email:</label>
-            <input type="email" name="emailaddress" id="email" required />
-            <label for="phone">Phone:</label>
-            <input type="tel" name="phone" id="phone" />
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" required></textarea>
-            <button class="submit-btn">Submit</button>
-          </form>
-        </div>
+        <section id="boxes-form">
+          <div class="contact-box-section">
+            <div class="contact-box">
+              <i class="fa-solid fa-comments"></i>
+              <p class="box-text">+47 21 98 20 00</p>
+              <p class="box-text">Info@oslosciencemuseum.org</p>
+              <p class="box-text">
+                Oslo Science Museum, Haakon VIIs gate 1, 0161 Oslo, Norway
+              </p>
+            </div>
+            <div class="contact-box">
+              <a href="info.html">
+                <i class="fa-solid fa-circle-info"></i>
+                <p class="box-text">
+                  Click here to find out more information about our opening
+                  hours, location, admission, accessibility, café and shop.
+                </p>
+              </a>
+            </div>
+            <div class="contact-box">
+              <a href="exhibits.html">
+                <i class="fa-solid fa-shop"></i>
+                <p class="box-text">
+                  Click here to see what exhibits we have on display.
+                </p>
+                <p class="box-text">
+                  We have everything from dinosaurs to robotics!
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="form-container">
+            <h2 class="title" id="no-padding">Contact Us</h2>
+            <hr />
+            <form method="GET">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" required />
+              <label for="email">Email:</label>
+              <input type="email" name="emailaddress" id="email" required />
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone" />
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" required></textarea>
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+        </section>
       </section>
     </main>
     <!-- Footer -->
