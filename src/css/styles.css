@@ -1,5 +1,6 @@
 @import url("./about.css");
 @import url("./contact.css");
+@import url("./events.css");
 @import url("./exhibits.css");
 @import url("./info.css");
 @import url("./support.css");
@@ -19,7 +20,6 @@ main {
 }
 
 .padding {
-  padding-left: 27px;
   padding-top: 18px;
 }
 
@@ -27,6 +27,7 @@ main {
   -webkit-text-stroke-width: 0.5px;
   margin-bottom: 0;
   font-size: 1.7rem;
+  width: fit-content;
 }
 
 .text {
@@ -265,11 +266,12 @@ footer p {
   position: absolute;
   top: 0;
   left: 0;
+  filter: brightness(74%);
 }
 
 .hero-text {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -278,14 +280,25 @@ footer p {
   -webkit-text-stroke-width: 2px;
 }
 
+.padding h2,
+.padding h3,
+.padding p {
+  margin-left: 25px;
+}
+
+.white-bb {
+  border-bottom: solid 3px #ffffff;
+  padding-bottom: 5px;
+}
+
 .kids,
 .clubs {
   margin-top: 2rem;
 }
 
 .home-images {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 60%;
@@ -293,6 +306,30 @@ footer p {
 
 .center-image {
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#kids-container {
+  background-color: #b7c5e7;
+  padding: 1px 16px 22px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  bottom: 50px;
+}
+
+#club-container {
+  background-color: #fccca1;
+  padding: 1px 16px 22px 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  bottom: 50px;
+}
+
+.p-top {
+  padding-top: 6px;
 }
 
 .kids p,
@@ -340,11 +377,11 @@ footer p {
   background-color: #f7bf36;
   color: #000;
   border-radius: 150px;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
   text-align: center;
   width: fit-content;
-  padding: 16px 28px;
+  padding: 16px 50px;
   -webkit-text-stroke-width: 1.5px;
 }
 
@@ -548,7 +585,29 @@ footer p {
 
   .wrapper {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .kids,
+  .clubs {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .center-image {
+    position: absolute;
+  }
+
+  #kids-container,
+  #club-container {
+    position: static;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+
+  #kids-container {
+    width: 80%;
   }
 }
 

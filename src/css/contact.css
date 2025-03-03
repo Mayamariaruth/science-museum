@@ -7,21 +7,15 @@
   margin-top: 0;
 }
 
-.bg-color {
-  background: url('https://mayamariaruth.github.io/science-museum/assets/images/contact-bg.jpg') no-repeat center center;
-  background-size: cover;
-  height: 120vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
 .form-container {
   background-color: #fff;
   padding: 10px 20px 40px;
-  width: 60%;
+  width: 80%;
+  margin: 50px auto 100px;
+  border-radius: 20px;
   max-width: 500px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 form {
@@ -40,6 +34,7 @@ input[type="tel"] {
   border: solid 1px #000;
   font-size: 14px;
   color: #000;
+  border-radius: 10px;
 }
 
 input[type="text"]:focus,
@@ -57,6 +52,7 @@ textarea {
   border: solid 1px #000;
   font-size: 14px;
   color: #000;
+  border-radius: 10px;
 }
 
 .submit-btn {
@@ -70,7 +66,7 @@ textarea {
 
 .submit-btn:hover {
   color: #fff;
-  background-color: #3F2824;
+  background-color: #3f2824;
 }
 
 @media (min-width: 768px) {
