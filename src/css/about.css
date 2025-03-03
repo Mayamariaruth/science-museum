@@ -1,5 +1,14 @@
+.about-section h2,
+.about-section p {
+  margin-left: 16px;
+}
+
 #about-image {
   margin-top: 1rem;
+}
+
+#about-img-section {
+  position: relative;
 }
 
 .about-btn {
@@ -10,17 +19,23 @@
   text-decoration: none;
   text-align: center;
   width: fit-content;
-  padding: 16px 28px;
+  padding: 16px 45px;
   -webkit-text-stroke-width: 1px;
 }
 
 .about-btn:hover {
-  background-color: #5D4816;
+  background-color: #5d4816;
   color: #fff;
 }
 
+#mission-title {
+  border-bottom: solid 3px #fff;
+  padding-bottom: 5px;
+}
+
 .mission-bg {
-  background: url('https://mayamariaruth.github.io/science-museum/assets/images/about/about2.jpg') no-repeat center center;
+  background: url("https://mayamariaruth.github.io/science-museum/assets/images/about/about2.jpg")
+    no-repeat center center;
   background-size: cover;
   height: 50vh;
   display: flex;
@@ -55,13 +70,15 @@
 
   .about-btn {
     font-size: 24px;
-    padding: 18px 30px;
+    padding: 18px 55px;
+    -webkit-text-stroke-width: 1.5px;
   }
 }
 
 @media (min-width: 768px) {
   .mission-bg p {
     font-size: 20px;
+    max-width: 700px;
   }
 
   .about-container {
@@ -81,7 +98,8 @@
 
   .about-btn {
     font-size: 30px;
-    padding: 20px 42px;
+    padding: 20px 65px;
+    -webkit-text-stroke-width: 2px;
   }
 
   .about-container {
