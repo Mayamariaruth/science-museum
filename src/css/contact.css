@@ -1,9 +1,3 @@
-.contact-container h2,
-.contact-container p,
-.contact-container i {
-  padding-left: 16px;
-}
-
 #width {
   width: 80%;
 }
@@ -26,11 +20,13 @@
 
 .contact-box i {
   font-size: 35px;
+  margin-left: 16px;
 }
 
 .box-text {
   font-size: 16px;
   line-height: 23px;
+  margin-left: 16px;
 }
 
 .fa-comments {
@@ -52,12 +48,13 @@
   max-height: 600px;
   border-radius: 20px;
   max-width: 500px;
+  margin: 30px auto 150px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
-#no-padding {
-  padding-left: 0;
+#no-margin {
+  margin-left: 0;
 }
 
 form {
@@ -112,12 +109,6 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .contact-container h2,
-  .contact-container p,
-  .contact-container i {
-    padding-left: 25px;
-  }
-
   #boxes-form {
     display: flex;
     flex-direction: row-reverse;
@@ -142,6 +133,7 @@ textarea {
 
   .form-container {
     flex: 1 1 55%;
+    margin: 0;
   }
 
   form {

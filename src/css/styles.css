@@ -28,12 +28,14 @@ main {
   margin-bottom: 0;
   font-size: 1.7rem;
   width: fit-content;
+  margin-left: 16px;
 }
 
 .text {
   font-size: 16px;
   width: 95%;
   line-height: 23px;
+  margin-left: 16px;
 }
 
 .text-margin {
@@ -66,6 +68,7 @@ main {
   text-align: center;
   font-size: 37px;
   -webkit-text-stroke-width: 2px;
+  width: 100%;
 }
 
 .heading {
@@ -278,12 +281,6 @@ footer p {
   text-align: center;
   font-size: 37px;
   -webkit-text-stroke-width: 2px;
-}
-
-.padding h2,
-.padding h3,
-.padding p {
-  margin-left: 25px;
 }
 
 .white-bb {
@@ -612,6 +609,11 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  .title,
+  .text {
+    margin-left: 25px;
+  }
+
   header {
     height: 95px;
   }
