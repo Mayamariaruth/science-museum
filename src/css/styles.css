@@ -322,6 +322,7 @@ footer p {
   border-bottom: solid #b7c5e7 3px;
   width: fit-content;
   margin: 20px auto;
+  padding-bottom: 5px;
 }
 
 #bb-color2 {
@@ -394,9 +395,10 @@ footer p {
   padding-bottom: 5px;
 }
 
-.kids,
-.clubs {
-  margin-top: 2rem;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .home-images {
@@ -410,25 +412,24 @@ footer p {
 .center-image {
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  top: 45px;
+}
+
+.content-box {
+  padding: 1px 16px 22px 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #kids-container {
   background-color: #b7c5e7;
-  padding: 1px 16px 22px 0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: relative;
-  bottom: 50px;
 }
 
 #club-container {
   background-color: #fccca1;
-  padding: 1px 16px 22px 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  position: relative;
-  bottom: 50px;
 }
 
 .p-top {
@@ -687,30 +688,44 @@ footer p {
   }
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    gap: 80px;
   }
 
-  .kids,
-  .clubs {
+  .content-box {
+    box-shadow: none;
+  }
+
+  .kids {
     display: flex;
+    padding-right: 16px;
+    margin-top: 20px;
+    align-items: center;
     flex-direction: row-reverse;
-  }
-
-  .center-image {
-    position: absolute;
-  }
-
-  #kids-container,
-  #club-container {
-    position: static;
+    background-color: #b7c5e7;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
       rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 
+  .clubs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 16px;
+    background-color: #fccca1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+
+  .center-image {
+    top: 0;
+  }
+
+  #club-container {
+    background-color: transparent;
+  }
+
   #kids-container {
-    width: 80%;
+    background-color: transparent;
   }
 }
 
@@ -795,18 +810,13 @@ footer p {
     font-size: 18px;
   }
 
-  .wrapper {
-    justify-content: center;
-  }
-
-  .kids,
-  .clubs {
-    width: 700px;
+  .kids {
+    padding: 20px 16px 20px 0;
   }
 
   .home-images {
-    width: 380px;
-    height: 380px;
+    width: 340px;
+    height: 340px;
   }
 
   .heading {
@@ -857,13 +867,33 @@ footer p {
     font-size: 21px;
   }
 
-  .wrapper {
-    gap: 9rem;
-    margin-right: 3rem;
-  }
-
   .btn-container {
     margin-bottom: 7rem;
+  }
+
+  .wrapper {
+    gap: 50px;
+    max-width: 1440px;
+    margin: 20px auto;
+  }
+
+  .kids {
+    height: 394px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    border-radius: 20px;
+  }
+
+  .clubs {
+    height: 400px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    border-radius: 20px;
+    margin: 0 0 0 auto;
+  }
+
+  .center-image {
+    width: 50%;
   }
 
   .exhibits-btn {
