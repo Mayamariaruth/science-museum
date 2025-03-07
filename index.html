@@ -44,7 +44,7 @@
       rel="stylesheet"
     />
     <!-- JavaScript -->
-    <script></script>
+    <script src="js/script.js" defer></script>
     <title>Oslo Science Museum | Home</title>
   </head>
   <body>
@@ -130,64 +130,71 @@
     </header>
     <!-- Main content -->
     <main>
-      <!-- Hero scroll sections -->
-      <section class="hero-container" id="section1">
-        <img
-          class="hero-image"
-          src="assets/images/home/hero.jpg"
-          alt="Dinosaur exhibit in a museum"
-        />
-        <div class="hero-text">
-          <h1>Let's Explore Together!</h1>
+      <div class="hero-wrapper">
+        <i class="fa-solid fa-chevron-left scroll-btn" id="scroll-left"></i>
+        <i class="fa-solid fa-chevron-right scroll-btn" id="scroll-right"></i>
+        <!-- Hero scroll sections -->
+        <div class="hero-scroll-container">
+          <section class="hero-container" id="section1">
+            <img
+              class="hero-image"
+              src="assets/images/home/hero.jpg"
+              alt="Dinosaur exhibit in a museum"
+            />
+            <div class="hero-text">
+              <h1>Let's Explore Together!</h1>
+            </div>
+          </section>
+          <section class="hero-container" id="section2">
+            <img
+              class="hero-image"
+              src="assets/images/events/sheila.jpg"
+              alt="Female Professor standing in front of an airplane"
+            />
+            <div>
+              <h1>Sheila Widnall</h1>
+              <p>
+                The renowned Professor of Aeronautics from the Massachusetts
+                Institute of Technology will be delivering 3 lectures on the
+                development of aeronautics and its future.
+              </p>
+              <button class="learn-btn">Learn more</button>
+            </div>
+          </section>
+          <section class="hero-container" id="section3">
+            <img
+              class="hero-image"
+              src="assets/images/events/night.jpg"
+              alt="Picture of a Dinosaur in a museum"
+            />
+            <div>
+              <h1>Night in the museum</h1>
+              <p>
+                Get your family together for an exciting night in the museum as
+                you sleep over beside dinosaurs and science displays.
+              </p>
+              <button class="learn-btn">Learn more</button>
+            </div>
+          </section>
+          <section class="hero-container" id="section4">
+            <img
+              class="hero-image"
+              src="assets/images/events/energetica.jpg"
+              alt="Picture of a wind turbine"
+            />
+            <div class="events-scroll-text">
+              <h1>Energetica Exhibition on Loan</h1>
+              <p>
+                Explore our powerful exhibition from the NEMO Science Museum in
+                Amsterdam displaying a series of installations that allow
+                visitors to experience the power of the elements as we harness
+                them.
+              </p>
+              <button class="learn-btn">Learn more</button>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="hero-container" id="section2">
-        <img
-          class="hero-image"
-          src="assets/images/events/sheila.jpg"
-          alt="Female Professor standing in front of an airplane"
-        />
-        <div>
-          <h1>Sheila Widnall</h1>
-          <p>
-            The renowned Professor of Aeronautics from the Massachusetts
-            Institute of Technology will be delivering 3 lectures on the
-            development of aeronautics and its future.
-          </p>
-          <button class="learn-btn">Learn more</button>
-        </div>
-      </section>
-      <section class="hero-container" id="section3">
-        <img
-          class="hero-image"
-          src="assets/images/events/night.jpg"
-          alt="Picture of a Dinosaur in a museum"
-        />
-        <div>
-          <h1>Night in the museum</h1>
-          <p>
-            Get your family together for an exciting night in the museum as you
-            sleep over beside dinosaurs and science displays.
-          </p>
-          <button class="learn-btn">Learn more</button>
-        </div>
-      </section>
-      <section class="hero-container" id="section4">
-        <img
-          class="hero-image"
-          src="assets/images/events/energetica.jpg"
-          alt="Picture of a wind turbine"
-        />
-        <div class="events-scroll-text">
-          <h1>Energetica Exhibition on Loan</h1>
-          <p>
-            Explore our powerful exhibition from the NEMO Science Museum in
-            Amsterdam displaying a series of installations that allow visitors
-            to experience the power of the elements as we harness them.
-          </p>
-          <button class="learn-btn">Learn more</button>
-        </div>
-      </section>
+      </div>
       <!-- Landing page -->
       <section class="padding">
         <h2 class="title">Discover</h2>
