@@ -299,6 +299,59 @@ footer p {
   z-index: 2;
 }
 
+.events-scroll-text {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  max-width: 850px;
+  padding: 10px 20px 40px;
+  bottom: 0;
+  box-sizing: border-box;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.events-scroll-text h1 {
+  -webkit-text-stroke-width: 1px;
+  font-size: 25px;
+  border-bottom: solid #b7c5e7 3px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+#bb-color2 {
+  border-bottom: solid #e5bebe 3px;
+}
+
+#bb-color3 {
+  border-bottom: solid #fccca1 3px;
+}
+
+.events-scroll-text p {
+  font-size: 17px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.learn-btn {
+  font-size: 17px;
+  padding: 12px 30px;
+  background-color: #f7bf36;
+  border-radius: 20px;
+  border: none;
+  -webkit-text-stroke-width: 0.8px;
+}
+
+.learn-btn:hover {
+  background-color: #5d4816;
+  color: #fff;
+}
+
 .scroll-btn {
   position: absolute;
   top: 50%;
@@ -701,6 +754,21 @@ footer p {
     font-size: 45px;
   }
 
+  .events-scroll-text h1 {
+    font-size: 35px;
+  }
+
+  .events-scroll-text p {
+    font-size: 22px;
+  }
+
+  .learn-btn {
+    margin-top: 5px;
+    font-size: 23px;
+    padding: 13px 55px;
+    -webkit-text-stroke-width: 1px;
+  }
+
   .title {
     font-size: 2rem;
   }
@@ -793,5 +861,11 @@ footer p {
   .teachers p,
   .researchers p {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-text {
+    font-size: 65px;
   }
 }
