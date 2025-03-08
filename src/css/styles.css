@@ -514,7 +514,7 @@ footer p {
   width: 100%;
   max-width: 580px;
   background-color: white;
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 15px 5px 35px 0;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -548,12 +548,12 @@ footer p {
   z-index: 1;
 }
 
-#red-color-bg {
+.red-color-bg {
   background-color: #e5bebe;
   right: 0;
 }
 
-#green-color-bg {
+.green-color-bg {
   background-color: #b6dfa8;
   left: 0;
 }

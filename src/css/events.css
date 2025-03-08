@@ -141,33 +141,33 @@
 
 @media (min-width: 768px) {
   .events-text {
-    font-size: 19px;
+    font-size: 20px;
     margin-left: 25px;
   }
 
   .bg1 h3,
   .bg2 h3,
   .bg3 h3 {
-    font-size: 25px;
+    font-size: 28px;
     margin-left: 25px;
   }
 
   .body-text {
-    font-size: 16px;
+    font-size: 17px;
     margin-left: 25px;
   }
 }
 
 @media (min-width: 998px) {
   .body-text {
-    font-size: 17px;
+    font-size: 18px;
     max-width: 600px;
   }
 
   .bg1,
   .bg2,
   .bg3 {
-    height: 280px;
+    height: 285px;
   }
 }
 

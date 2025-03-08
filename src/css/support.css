@@ -1,7 +1,39 @@
+.donation-container,
+.internship-container,
+.volunteer-container {
+  position: relative;
+  display: flex;
+  margin-bottom: 80px;
+  padding: 0 0 45px 0;
+}
+
+.donation-container {
+  margin-top: 40px;
+}
+
 .donations,
 .internships,
 .volunteer {
   margin-top: 3rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 580px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 5px 35px 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.blue-color-bg {
+  background-color: #b7c5e7;
+  right: 0;
+}
+
+#green-bg {
+  right: 0;
+  left: auto;
 }
 
 .donations h2,
@@ -10,55 +42,137 @@
   font-size: 25px;
   -webkit-text-stroke-width: 0.5px;
   margin-bottom: 0;
-  padding-left: 27px;
+  margin-left: 16px;
+}
+
+#donation-heading {
+  border-bottom: solid #e5bebe 3px;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+#internship-heading {
+  border-bottom: solid #b6dfa8 3px;
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+#volunteer-heading {
+  border-bottom: solid #b7c5e7be 3px;
+  padding-bottom: 5px;
+  width: fit-content;
 }
 
 .donations p,
 .internships p,
 .volunteer p {
   width: 90%;
-  font-size: 15px;
-  margin-top: 6px;
-  padding-left: 27px;
+  margin-top: 12px;
 }
 
 @media (min-width: 576px) {
-  .support-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    grid-auto-flow: dense;
-  }
-
-  .donations {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .internships {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
+  .donations,
+  .internships,
   .volunteer {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    justify-self: center;
-    max-width: 900px;
-    width: 100%;
+    left: 15px;
   }
 }
 
 @media (min-width: 768px) {
+  .donations,
+  .internships,
+  .volunteer {
+    left: 25px;
+    max-width: 680px;
+  }
+
   .donations h2,
   .internships h2,
   .volunteer h2 {
     font-size: 28px;
+    margin-left: 35px;
   }
 
   .donations p,
   .internships p,
   .volunteer p {
-    font-size: 18px;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 998px) {
+  .donations,
+  .internships,
+  .volunteer {
+    max-width: 700px;
+  }
+
+  .donations h2,
+  .internships h2,
+  .volunteer h2 {
+    font-size: 30px;
+  }
+
+  .donations p,
+  .internships p,
+  .volunteer p {
+    font-size: 21px;
+  }
+
+  #donation-img {
+    background-image: url(../../assets/images/support/donations.png);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    background-position: right;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+
+  #internship-img {
+    background-image: url(../../assets/images/support/intern.png);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: right;
+    bottom: 0;
+  }
+
+  #volunteer-img {
+    background-image: url(../../assets/images/support/volunteer.png);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: right;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .donation-container,
+  .internship-container,
+  .volunteer-container {
+    max-width: 1100px;
+    margin: 40px auto 80px;
+  }
+
+  .donations h2,
+  .internships h2,
+  .volunteer h2 {
+    font-size: 32px;
+  }
+
+  .donations p,
+  .internships p,
+  .volunteer p {
+    font-size: 23px;
   }
 }

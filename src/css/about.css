@@ -1,9 +1,6 @@
-#about-image {
-  margin-top: 1rem;
-}
-
-#about-img-section {
-  position: relative;
+#about-btn-container {
+  text-align: left;
+  margin-left: 16px;
 }
 
 .about-btn {
@@ -46,23 +43,6 @@
 }
 
 @media (min-width: 576px) {
-  .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem 0;
-    gap: 1.5rem;
-  }
-
-  #about-image {
-    height: 300px;
-    width: 300px;
-  }
-
-  .text-container {
-    max-width: 600px;
-  }
-
   .about-btn {
     font-size: 24px;
     padding: 18px 55px;
@@ -76,29 +56,18 @@
     max-width: 700px;
   }
 
-  .about-container {
-    gap: 3rem;
+  #about-btn-container {
+    margin-left: 25px;
   }
 }
 
 @media (min-width: 998px) {
+  .about-section p {
+    max-width: 1300px;
+  }
+
   .mission-bg p {
     font-size: 24px;
-  }
-
-  #about-image {
-    height: 400px;
-    width: 400px;
-  }
-
-  .about-btn {
-    font-size: 30px;
-    padding: 20px 65px;
-    -webkit-text-stroke-width: 2px;
-  }
-
-  .about-container {
-    gap: 6rem;
   }
 
   #mission-title {
