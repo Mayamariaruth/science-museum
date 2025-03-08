@@ -1,186 +1,112 @@
-.hours-info {
-  margin-bottom: 2rem;
+.info-main {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  max-width: 1000px;
 }
 
-.hours-info h2 {
-  margin-bottom: 1rem;
+.hours-container {
+  max-width: 400px;
+  margin: 30px 0 0 30px;
+  padding: 5px 0 20px 0;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
-.hours-info p {
-  margin: 2px;
-  font-size: 16px;
+.hours-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hours-container h2 {
+  border-bottom: solid #b7c5e7 3px;
+}
+
+.food-container {
+  max-width: 400px;
+  margin: 30px 30px 0 30px;
+  padding: 5px 0 20px 0;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.food-container h2 {
+  border-bottom: solid #b6dfa8 3px;
+}
+
+.food-container p {
+  width: 85%;
 }
 
 .admission {
-  background-color: #a6675b;
-  color: #000;
-  width: 100%;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-top: 80px;
 }
 
-.center-container {
-  max-width: 600px;
+.admission h2 {
+  border-bottom: solid #fccca1 3px;
 }
 
-.food,
+.shop-container {
+  max-width: 1200px;
+  margin-top: 80px;
+}
+
+.shop-container h2 {
+  border-bottom: solid #e5bebe 3px;
+}
+
 .location-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 80px;
 }
 
-.food p {
-  width: 215px;
-  padding-left: 2.3rem;
-}
-
-.shop {
-  background: url('https://mayamariaruth.github.io/science-museum/assets/images/info/info3.jpg') no-repeat center center;
-  background-size: cover;
-  height: 50vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 2.7rem;
-}
-
-.shop h2,
-.shop p {
-  padding-left: 2.5rem;
-}
-
-.shop p {
-  max-width: 500px;
-  width: 55%;
+.location-container h2 {
+  border-bottom: solid #d0c0e9 3px;
 }
 
 iframe {
-  margin-top: 1.3rem;
+  width: 92%;
+  margin-left: 16px;
+  max-width: 1200px;
 }
 
 .accessibility {
-  margin-top: 4rem;
-  background-color: #7b7586;
-  color: #000;
-  width: 100%;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  max-width: 1200px;
 }
 
-@media (min-width: 576px) {
-  .hours-container,
-  .food-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    gap: 2rem;
-  }
+.accessibility h2 {
+  border-bottom: solid #b6dfa8 3px;
+  padding-bottom: 5px;
+}
 
-  .location-container {
-    display: flex;
+@media (min-width: 600px) {
+  .info-main {
     flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
   }
 
-  .shop h2,
-  .shop p {
-    padding-left: 4rem;
-  }
-
-  iframe {
-    width: 350px;
-    height: 350px;
+  .food-container,
+  .hours-container {
+    flex: 1;
   }
 }
 
 @media (min-width: 768px) {
+  .info-main {
+    gap: 20px;
+  }
+
   #info-hero {
     object-position: 75% 25%;
   }
-  
-  .hours-info p,
-  .admission p,
-  .food p,
-  .shop p,
-  .location-container p,
-  .accessibility p {
-    font-size: 20px;
-  }
-
-  .hours-container,
-  .food-container,
-  .location-container {
-    gap: 5rem;
-  }
-
-  .food {
-    align-items: first baseline;
-  }
-
-  .food p {
-    padding-left: 0;
-    width: 300px;
-  }
-
-  .shop {
-    height: 60vh;
-  }
-
-  .shop h2,
-  .shop p {
-    padding-left: 6rem;
-  }
-}
-
-@media (min-width: 998px) {
-  .shop h2,
-  .shop p {
-    padding-left: 8rem;
-  }
-
-  .hours-info p,
-  .admission p,
-  .food p,
-  .shop p,
-  .location-container p,
-  .accessibility p {
-    font-size: 22px;
-  }
-
-  .hours-container,
-  .food-container,
-  .location-container {
-    gap: 8rem;
-  }
-
-  #info1,
-  #info2 {
-    height: 360px;
-    width: 360px;
-  }
 
   iframe {
-    width: 430px;
-    height: 400px;
+    margin-left: 25px;
   }
 }
